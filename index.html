@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="exit-btn">
+        <button class ="exit-btn" onclick="exitQuiz()">나가기</button>
+    </div>
+<div class="app">
+    <h1>일반 상대성 이론</h1>
+    <div class="quiz">
+        <h2 id="question">대충 문제 있는 곳</h2>
+        <p class="note">* (Ctrl키 + (+/-)키 또는 Ctrl키 + 마우스 휠로 확대 및 축소 가능) </p>
+        <div id="image-container"></div>
+        <div id="answer-buttons">
+            <button class="btn">답 1</button>
+            <button class="btn">답 2</button>
+            <button class="btn">답 3</button>
+            <button class="btn">답 4</button>
+            <button class="btn">답 5</button>
+        </div>
+        <button id="next-btn">다음</button>
+        <button id="show-btn">정답 보기</button>
+    </div>
+</div>
+<script src="script.js"></script>
+<script>
+function exitQuiz() {          
+    if (confirm("정말로 나가시겠습니까?")) {
+        window.location.href = "homepage.html"; // 나가기
+    }
+}
+</script>
+</body>
+</html>
